@@ -1,0 +1,83 @@
+body {
+	width: 50rem;
+	font-size: 1rem;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+main {
+	border: solid black 0.5rem;
+	padding: 2rem;
+}
+
+header {
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem 0;
+	font-weight: bold;
+	background-color: red;
+	text-decoration: underline;
+	margin-bottom: 4rem;
+	border: solid black 0.2rem;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: flex-start;
+	margin: auto;
+}
+
+p {
+	margin: 1rem 0 1rem 0;
+	font-weight: bold;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 10rem;
+	border: 0.3rem grey solid;
+	padding: 1rem 0.5rem;
+	margin-top: 1rem;
+}
+
+input, label, select {
+	margin-top: 1rem;
+}
+
+img[alt="qr-code-scanner"] {
+	max-width: 10rem;
+	border-radius: 2rem;
+}
+
+.results {
+	display: flex;
+	justify-content: center;
+}
+
+.results img {
+	position: relative;
+}
+
+.save {
+	position: absolute;
+	top: 27.5rem;
+	left: 27.25rem;
+	background-color: red;
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+	border-radius: 1rem;
+
+}
+
+.hidden {
+	display: none;
+}

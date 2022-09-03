@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR-CODE GENERATOR</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/screen.css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="assets/js/script.js"></script>
+</head>
+<body>
+
+	<header> QR-code generator </header>
+	
+	<main>
+		<h1>Code generator</h1>
+		<p> Use your phone to quickly scan your personalized QR-code.</p>
+		<p> Fill your desired URL in the form below. You can either download your QR-code or use it right away.</p>
+
+		<div class="flex-container"> 
+			<form>
+				<label id="url"> Enter your URL </label>
+				<input type="url" id="url" name="url" placeholder="https://www.google.com" autocomplete="off">
+
+				<label id="size"> Pick a size </label>
+				<select id="size">
+					<option value="100">100x100</option>
+					<option value="200">200x200</option>
+					<option value="300">300x300</option>
+					<option value="400">400x400</option>
+					<option value="500">500x500</option>
+					<option value="600">600x600</option>
+					<option value="700">700x700</option>
+				</select>
+				<input type="submit" value="Generate">
+			</form>
+
+		<img src="images/qr-code-scanner.png" alt="qr-code-scanner" title="qr-code-scanner">
+		</div>
+
+		<div class="results">
+			<img id="spinner-gif" class="hidden" src="images/Broken circle.gif" alt="spinner" title="spinner">
+
+			<div id="qrcode"></div>
+		</div>
+
+	</main>
+
+</body>
+</html>
